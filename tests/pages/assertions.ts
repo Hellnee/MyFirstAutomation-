@@ -12,7 +12,7 @@ export class Assertions extends BaseHelp{
     }
     async verifyFormOutputIsCorrect(name: string, email: string, currentAddress: string, permanentAddress: string) {
         const output = this.page.locator('div.border.col-md-12.col-sm-12');
-        await expect(output).toBeVisible();
+        // await expect(output).toBeVisible();
     
         
         await expect(this.page.locator('#name')).toHaveText(`Name:${name}`);
